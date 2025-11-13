@@ -9,7 +9,6 @@
 </head>
 <body>
 
-  <!-- Header -->
   <header class="site-header">
     <div class="wrap header-inner">
       <div class="brand">
@@ -33,7 +32,6 @@
     </div>
   </header>
 
-  <!-- HERO -->
   <section id="home" class="hero-section">
     <div class="slideshow" aria-hidden="true">
       <div class="slide" style="background-image:url('https://images.pexels.com/photos/3184357/pexels-photo-3184357.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')"></div>
@@ -51,7 +49,7 @@
           <a class="btn primary" href="#projects">See Projects</a>
           <a class="btn ghost" href="#contact">Request Demo</a>
         </div>
-        <p class="micro">Trusted by innovators and scaling teams worldwide.</p>
+        <p class="micro">Trusted by innovators and scaling teams worldwide。</p>
       </div>
 
       <div class="hero-card">
@@ -66,7 +64,6 @@
     </div>
   </section>
 
-  <!-- FEATURES -->
   <section id="features" class="section features-section">
     <div class="wrap">
       <h2 class="section-title">What we offer</h2>
@@ -92,7 +89,6 @@
     </div>
   </section>
 
-  <!-- PROJECTS -->
   <section id="projects" class="section projects-section">
     <div class="wrap">
       <h2 class="section-title">Highlighted projects</h2>
@@ -124,7 +120,6 @@
     </div>
   </section>
 
-  <!-- TESTIMONIALS -->
   <section id="testimonials" class="section testimonials-section">
     <div class="wrap">
       <h2 class="section-title">What clients say</h2>
@@ -147,7 +142,6 @@
     </div>
   </section>
 
-  <!-- CTA -->
   <section class="section cta-section">
     <div class="wrap cta-wrap">
       <div>
@@ -160,7 +154,6 @@
     </div>
   </section>
 
-  <!-- FOOTER -->
   <footer id="contact" class="site-footer">
     <div class="wrap footer-inner">
       <div>© 2025 Sphere Tech Solutions</div>
@@ -168,25 +161,21 @@
     </div>
   </footer>
 
-  <!-- Minimal JS for theme and mobile menu -->
   <script>
     (function(){
       const btn = document.getElementById('themeToggle');
       const menuBtn = document.getElementById('menuToggle');
       const nav = document.getElementById('mainNav');
 
-      // Theme toggle
       btn.addEventListener('click', () => {
         document.documentElement.classList.toggle('dark-mode');
         btn.textContent = document.documentElement.classList.contains('dark-mode') ? '☀️' : '🌙';
       });
 
-      // Mobile menu toggle
       menuBtn.addEventListener('click', () => {
         nav.classList.toggle('open');
       });
 
-      // Close mobile nav on link click
       document.querySelectorAll('.nav-list a').forEach(a => {
         a.addEventListener('click', () => nav.classList.remove('open'));
       });
